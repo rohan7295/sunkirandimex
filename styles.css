@@ -2080,20 +2080,37 @@ footer {
 }
 
 /* ============ PAGE SECTIONS ============ */
-.page-section {
+/* ===============================
+   PAGE SECTION FIX
+   =============================== */
+
+/* Default: hide sections (for homepage SPA only) */
+.homepage .page-section {
     display: none;
     animation: fadeInPage 0.5s ease;
 }
 
-.page-section.active {
+/* Active section on homepage */
+.homepage .page-section.active {
     display: block;
 }
 
+/* Standalone pages (terms.html, privacy.html, etc.) */
+body:not(.homepage) .page-section {
+    display: block;
+}
+
+/* ===============================
+   ANIMATION
+   =============================== */
 @keyframes fadeInPage {
     from { opacity: 0; }
     to { opacity: 1; }
 }
 
+/* ===============================
+   CONTENT PAGE STYLES
+   =============================== */
 .content-page {
     padding: var(--space-32);
     max-width: 900px;
@@ -2126,7 +2143,6 @@ footer {
 }
 
 .content-page ul {
-  
     list-style: none;
     padding: 0;
 }
@@ -2146,6 +2162,9 @@ footer {
     color: var(--color-primary);
 }
 
+/* ===============================
+   CONTACT INFO BOX
+   =============================== */
 .contact-info {
     background: var(--color-surface);
     border: 1px solid var(--color-card-border);
