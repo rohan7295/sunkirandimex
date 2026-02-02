@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Sunkiran Dimex</title>
+
+    <!-- Common CSS for all pages -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Common JS -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav>
+    <div class="nav-container">
+        <div class="logo" onclick="navigateTo('home')">SUNKIRAN DIMEX</div>
+
+        <div class="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+        </ul>
+    </div>
+</nav>
+<!-- =============== NAVBAR END =============== -->
+
+
+<!-- ================= CONTACT FORM (AS-IS) ================= -->
+<div class="page-section">
+  <div class="contact-form">
+    <form id="contactForm" onsubmit="handleSubmit(event)">
+      <div id="contact" class="page-section">
+        <div class="contact-form">
+            <h2>Get In Touch</h2>
+            <form id="contactForm" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="business">Business Name</label>
+                    <input type="text" id="business" name="business">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message *</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+            </form>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- =============== CONTACT FORM END =============== -->
+
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h3>Sunkiran Dimex</h3>
+                <p>Professional Meta Ads & Instagram Marketing Agency based in Pimpri-Chinchwad, Maharashtra.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="about.html">About Us</a></p>
+                <p><a href="services.html">Services</a></p>
+                <p><a href="contact.html">Contact</a></p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><a href="tel:7769017372">+91 7769017372</a></p>
+                <p><a href="mailto:hajarekiran210@gmail.com">hajarekiran210@gmail.com</a></p>
+                <p>24-48 Hour Support</p>
+
+                <div class="footer-section">
+                    <h3>📍 Address</h3>
+                    <p>
+                        Sunkiran Dimex<br>
+                        Jaihari Housing Society<br>
+                        Nevale Wasti, Near Sane Chowk<br>
+                        Chikhali, Pimpri-Chinchwad<br>
+                        Maharashtra – 411062<br>
+                        India
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <a href="home.html">Home</a><br>
+                <a href="privacy.html">Privacy Policy</a><br>
+                <a href="terms.html">Terms & Conditions</a><br>
+                <a href="refund.html">Refund Policy</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Sunkiran Dimex. All rights reserved. | Transparent • Secure • Compliant</p>
+        </div>
+    </div>
+</footer>
+<!-- =============== FOOTER END =============== -->
+
+</body>
+</html>
